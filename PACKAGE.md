@@ -10,4 +10,6 @@ helm lint charts/keycloak
 helm package charts/keycloak
 
 helm repo index --url https://p2-inc.github.io/helm-charts/ .
+
+helm repo index --url https://p2-inc.github.io/helm-chart/ --merge index.yaml .
 ```

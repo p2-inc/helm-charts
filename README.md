@@ -8,9 +8,9 @@ Popular applications, provided by [Bitnami](https://bitnami.com), ready to launc
 ## TL;DR
 
 ```bash
-$ helm repo add bitnami https://charts.bitnami.com/bitnami
-$ helm search repo bitnami
-$ helm install my-release bitnami/<chart>
+$ helm repo add phasetwo https://p2-inc.github.io/helm-charts
+$ helm search repo phasetwo
+$ helm install keycloak --namespace keycloak --create-namespace phasetwo/keycloak
 ```
 
 ![Installing a chart](demo.gif)
