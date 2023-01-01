@@ -3,6 +3,7 @@
 
 ```
 cd charts/keycloak
+helm dependency update
 helm dependency build
 cd ../..
 

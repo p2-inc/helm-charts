@@ -5,7 +5,7 @@
 
 Popular applications, provided by [Bitnami](https://bitnami.com), ready to launch on Kubernetes using [Kubernetes Helm](https://github.com/helm/helm).
 
-## TL;DR
+## TL;DR (new helm repo)
 
 ```bash
 $ helm repo add phasetwo https://p2-inc.github.io/helm-charts
@@ -13,6 +13,15 @@ $ helm search repo phasetwo
 $ helm install keycloak --namespace keycloak --create-namespace phasetwo/keycloak
 $ kubectl get all,ing -n keycloak
 ```
+
+## TL;DR (existing helm repo/release)
+
+```bash
+$ helm repo update
+$ helm upgrade keycloak --namespace keycloak
+$ kubectl get all,ing -n keycloak
+```
+
 
 ![Installing a chart](demo.gif)
 

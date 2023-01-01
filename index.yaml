@@ -5,7 +5,7 @@ entries:
       category: DeveloperTools
     apiVersion: v2
     appVersion: 20.0.2.1671556844
-    created: "2023-01-01T13:37:49.333893481-08:00"
+    created: "2023-01-01T14:06:53.770125682-08:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -19,7 +19,7 @@ entries:
     description: Keycloak is a high performance Java-based identity and access management
       solution. It lets developers add an authentication layer to their applications
       with minimum effort.
-    digest: 391aa5e30bcf44fe5aab0e44009e1ae84e22dd78907baff0d79c8b71b315d8b2
+    digest: 86b6c56939dd7b538b784d487c00ee3ced73d9fcc1007121f61ee864b118bd33
     home: https://www.keycloak.org
     icon: https://bitnami.com/assets/stacks/keycloak/img/keycloak-stack-220x234.png
     keywords:
@@ -35,4 +35,4 @@ entries:
     urls:
     - https://p2-inc.github.io/helm-charts/keycloak-20.0.1671556844.tgz
     version: 20.0.1671556844
-generated: "2023-01-01T13:37:49.328661801-08:00"
+generated: "2023-01-01T14:06:53.765013921-08:00"
