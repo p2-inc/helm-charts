@@ -70,7 +70,7 @@ To install Helm, refer to the [Helm install guide](https://github.com/helm/helm#
 The following command allows you to download and install all the charts from this repository:
 
 ```bash
-$ helm repo add bitnami https://charts.bitnami.com/bitnami
+$ helm repo add phasetwo https://p2-inc.github.io/helm-charts
 ```
 
 > **_NOTE:_** It is important to note that the above mentioned repo is truncated so it only contains entries for the releases produced in the last 6 months. In case you need a full index, you can use it from the [archive-full-index branch](https://raw.githubusercontent.com/bitnami/charts/archive-full-index/bitnami/index.yaml) in the bitnami/charts Github repository.
@@ -87,12 +87,12 @@ Please refer to the [Quick Start guide](https://helm.sh/docs/intro/quickstart/) 
 
 Useful Helm Client Commands:
 * View available charts: `helm search repo`
-* Install a chart: `helm install my-release bitnami/<package-name>`
+* Install a chart: `helm install my-release phasetwo/<package-name>`
 * Upgrade your application: `helm upgrade`
 
 ## License
 
-Copyright &copy; 2022 Bitnami
+Copyright &copy; 2022 Phase Two, Inc.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
