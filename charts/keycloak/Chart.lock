@@ -1,6 +1,6 @@
 dependencies:
 - name: postgresql
-  repository: https://charts.bitnami.com/bitnami
+  repository: https://phasetwo.io/helm-charts/charts
   version: 12.1.6
 - name: common
   repository: https://charts.bitnami.com/bitnami

@@ -2,15 +2,21 @@
 ## Instructions for packaging helm charts
 
 ```
+cd charts/postgresql
+helm dependency update
+helm dependency build
+cd ../..
+
 cd charts/keycloak
 helm dependency update
 helm dependency build
 cd ../..
 
+helm lint charts/postgresql
+helm package charts/postgresql
+
 helm lint charts/keycloak
 helm package charts/keycloak
-
-helm repo index --url https://p2-inc.github.io/helm-charts/ .
 
 helm repo index --url https://p2-inc.github.io/helm-charts/ --merge index.yaml .
 ```
