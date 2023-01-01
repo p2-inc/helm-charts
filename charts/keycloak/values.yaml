@@ -204,7 +204,7 @@ configuration: ""
 existingConfigmap: ""
 ## @param extraStartupArgs Extra default startup args
 ##
-extraStartupArgs: ""
+extraStartupArgs: "--spi-email-template-provider=freemarker-plus-mustache --spi-email-template-freemarker-plus-mustache-enabled=true"
 ## @param initdbScripts Dictionary of initdb scripts
 ## Specify dictionary of scripts to be run at first boot
 ## ref: https://github.com/bitnami/containers/tree/main/bitnami/keycloak#initializing-a-new-instance
@@ -223,7 +223,7 @@ initdbScriptsConfigMap: ""
 command: []
 ## @param args Override default container args (useful when using custom images)
 ##
-args: []
+args: [ "start-dev" ]
 ## @param extraEnvVars Extra environment variables to be set on Keycloak container
 ## Example:
 ## extraEnvVars:
