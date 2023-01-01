@@ -5,11 +5,11 @@ entries:
       category: DeveloperTools
     apiVersion: v2
     appVersion: 20.0.2.1671556844
-    created: "2023-01-01T14:34:07.978262124-08:00"
+    created: "2023-01-01T14:40:39.631069559-08:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
-      repository: https://phasetwo.io/helm-charts
+      repository: https://p2-inc.github.io/helm-charts
       version: 12.x.x
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -19,7 +19,7 @@ entries:
     description: Keycloak is a high performance Java-based identity and access management
       solution. It lets developers add an authentication layer to their applications
       with minimum effort.
-    digest: 3460e2e7dcf780064c322d1484d7d92c95db820fe833c67ca4a47cd106cef0fe
+    digest: 2d890c4f849b996c5e590e9ac16ed4c8fdfe288ee16f6319978d8e8974433389
     home: https://www.keycloak.org
     icon: https://bitnami.com/assets/stacks/keycloak/img/keycloak-stack-220x234.png
     keywords:
@@ -40,7 +40,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 15.1.0
-    created: "2023-01-01T14:34:07.980686644-08:00"
+    created: "2023-01-01T14:40:39.633466518-08:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -50,7 +50,7 @@ entries:
     description: PostgreSQL (Postgres) is an open source object-relational database
       known for reliability and data integrity. ACID-compliant, it supports foreign
       keys, joins, views, triggers and stored procedures.
-    digest: 09e738601ded80804408ea765cab55143486f1cc2fcc8cd5226bfebf89fd300b
+    digest: 5d2bb799bda8a3b2f96427d77f5c3183655655e191367a9331c9b7635108ca60
     home: https://phasetwo.io/helm-charts/charts/postgresql
     icon: https://bitnami.com/assets/stacks/postgresql/img/postgresql-stack-220x234.png
     keywords:
@@ -70,4 +70,4 @@ entries:
     urls:
     - https://p2-inc.github.io/helm-charts/postgresql-12.1.3.tgz
     version: 12.1.3
-generated: "2023-01-01T14:34:07.972982143-08:00"
+generated: "2023-01-01T14:40:39.62570684-08:00"

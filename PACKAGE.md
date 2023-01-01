@@ -3,11 +3,13 @@
 
 ```
 cd charts/postgresql
+helm repo update
 helm dependency update
 helm dependency build
 cd ../..
 
 cd charts/keycloak
+helm repo update
 helm dependency update
 helm dependency build
 cd ../..
