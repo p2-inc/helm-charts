@@ -72,9 +72,9 @@ diagnosticMode:
 ## @param image.debug Specify if debug logs should be enabled
 ##
 image:
-  registry: docker.io
-  repository: bitnami/keycloak
-  tag: 19.0.3-debian-11-r15
+  registry: quay.io
+  repository: phasetwo/phasetwo-keycloak
+  tag: 20.0.2.1671556844
   digest: ""
   ## Specify a imagePullPolicy
   ## Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
