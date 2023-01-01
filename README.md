@@ -18,7 +18,7 @@ $ kubectl get all,ing -n keycloak
 
 ```bash
 $ helm repo update
-$ helm upgrade keycloak --namespace keycloak
+$ helm upgrade keycloak --namespace keycloak phasetwo/keycloak
 $ kubectl get all,ing -n keycloak
 ```
 
