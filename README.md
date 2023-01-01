@@ -23,6 +23,12 @@ $ kubectl get all,ing -n keycloak
 ```
 
 
+## Gotchas
+
+ * If you're running Kubernetes locally (eg. microk8s/minikube) and postgres is not starting, you may need to [disable huge pages](https://github.com/kubernetes/kubernetes/issues/71233#issuecomment-447472125). 
+
+
+
 ![Installing a chart](demo.gif)
 
 ## Vulnerabilities scanner
