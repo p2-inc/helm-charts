@@ -1,9 +1,9 @@
 [![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/bitnami)](https://artifacthub.io/packages/search?repo=bitnami)
 [![CD Pipeline](https://github.com/bitnami/charts/actions/workflows/cd-pipeline.yml/badge.svg)](https://github.com/bitnami/charts/actions/workflows/cd-pipeline.yml)
 
-# The Bitnami Library for Kubernetes
+# The Phase Two Library for Kubernetes
 
-Popular applications, provided by [Bitnami](https://bitnami.com), ready to launch on Kubernetes using [Kubernetes Helm](https://github.com/helm/helm).
+Popular applications, provided by [Phase Two](https://phasetwo.io), ready to launch on Kubernetes using [Kubernetes Helm](https://github.com/helm/helm). This chart library was initially forked from [Bitnami](https://bitnami.com) and modified to deliver custom Phase Two keycloak images.
 
 ## TL;DR (new helm repo)
 
