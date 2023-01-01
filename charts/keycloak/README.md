@@ -1,18 +1,18 @@
 <!--- app-name: Keycloak -->
 
-# Keycloak packaged by Bitnami
+# Keycloak packaged by Phase Two (forked from Bitnami)
 
 Keycloak is a high performance Java-based identity and access management solution. It lets developers add an authentication layer to their applications with minimum effort.
 
 [Overview of Keycloak](https://www.keycloak.org/)
 
-Trademarks: This software listing is packaged by Bitnami. The respective trademarks mentioned in the offering are owned by the respective companies, and use of them does not imply any affiliation or endorsement.
-                           
 ## TL;DR
 
 ```console
-  helm repo add my-repo https://charts.bitnami.com/bitnami
-  helm install my-release my-repo/keycloak
+  helm repo add phasetwo https://p2-inc.github.io/helm-charts
+  helm search repo phasetwo
+  helm install keycloak --namespace keycloak --create-namespace phasetwo/keycloak
+  kubectl get all,ing -n keycloak  
 ```
 
 ## Introduction
@@ -30,11 +30,13 @@ Bitnami charts can be used with [Kubeapps](https://kubeapps.dev/) for deployment
 
 ## Installing the Chart
 
-To install the chart with the release name `my-release`:
+To install the chart with the release name `keycloak`:
 
 ```bash
-$ helm repo add my-repo https://charts.bitnami.com/bitnami
-$ helm install my-release my-repo/keycloak
+  helm repo add phasetwo https://p2-inc.github.io/helm-charts
+  helm search repo phasetwo
+  helm install keycloak --namespace keycloak --create-namespace phasetwo/keycloak
+  kubectl get all,ing -n keycloak
 ```
 
 These commands deploy a Keycloak application on the Kubernetes cluster in the default configuration.
@@ -43,10 +45,10 @@ These commands deploy a Keycloak application on the Kubernetes cluster in the de
 
 ## Uninstalling the Chart
 
-To uninstall/delete the `my-release` deployment:
+To uninstall/delete the `keycloak` release:
 
 ```bash
-$ helm delete my-release
+$ helm delete keycloak --namespace keycloak 
 ```
 
 The command removes all the Kubernetes components associated with the chart and deletes the release.
