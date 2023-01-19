@@ -74,7 +74,7 @@ diagnosticMode:
 image:
   registry: quay.io
   repository: phasetwo/phasetwo-keycloak
-  tag: 20.0.2.1671556844
+  tag: 20.0.3.1674047714
   digest: ""
   ## Specify a imagePullPolicy
   ## Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'

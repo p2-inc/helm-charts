@@ -5,7 +5,75 @@ entries:
       category: DeveloperTools
     apiVersion: v2
     appVersion: 20.0.2.1671556844
-    created: "2023-01-01T15:36:42.155485482-08:00"
+    created: "2023-01-19T13:25:36.35015213-08:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://p2-inc.github.io/helm-charts
+      version: 12.x.x
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Keycloak is a high performance Java-based identity and access management
+      solution. It lets developers add an authentication layer to their applications
+      with minimum effort.
+    digest: 61f55733facdc0c6a69e0457c805ea3cf1c0e498ad7e0ef4d2c5022934ebf49b
+    home: https://www.keycloak.org
+    icon: https://bitnami.com/assets/stacks/keycloak/img/keycloak-stack-220x234.png
+    keywords:
+    - keycloak
+    - access-management
+    maintainers:
+    - name: Bitnami
+      url: https://github.com/bitnami/charts
+    name: keycloak
+    sources:
+    - https://github.com/bitnami/containers/tree/main/bitnami/keycloak
+    - https://github.com/keycloak/keycloak
+    urls:
+    - https://p2-inc.github.io/helm-charts/keycloak-20.0.1674163503.tgz
+    version: 20.0.1674163503
+  - annotations:
+      category: DeveloperTools
+    apiVersion: v2
+    appVersion: 20.0.3.1674047714
+    created: "2023-01-19T15:55:34.659837683-08:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://p2-inc.github.io/helm-charts
+      version: 12.x.x
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Keycloak is a high performance Java-based identity and access management
+      solution. It lets developers add an authentication layer to their applications
+      with minimum effort.
+    digest: bb9f57be8ddec4f9058a8455f4905dc7986ae25d7a38e0ba78c29dd42103f947
+    home: https://www.keycloak.org
+    icon: https://bitnami.com/assets/stacks/keycloak/img/keycloak-stack-220x234.png
+    keywords:
+    - keycloak
+    - access-management
+    maintainers:
+    - name: Bitnami
+      url: https://github.com/bitnami/charts
+    name: keycloak
+    sources:
+    - https://github.com/bitnami/containers/tree/main/bitnami/keycloak
+    - https://github.com/keycloak/keycloak
+    urls:
+    - https://p2-inc.github.io/helm-charts/keycloak-20.0.1674047714.tgz
+    version: 20.0.1674047714
+  - annotations:
+      category: DeveloperTools
+    apiVersion: v2
+    appVersion: 20.0.2.1671556844
+    created: "2023-01-19T15:55:34.655382351-08:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -40,7 +108,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 15.1.0
-    created: "2023-01-01T15:36:42.1578486-08:00"
+    created: "2023-01-19T15:55:34.663319563-08:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -50,7 +118,7 @@ entries:
     description: PostgreSQL (Postgres) is an open source object-relational database
       known for reliability and data integrity. ACID-compliant, it supports foreign
       keys, joins, views, triggers and stored procedures.
-    digest: 5d2bb799bda8a3b2f96427d77f5c3183655655e191367a9331c9b7635108ca60
+    digest: 1a41019bbb455677a7e74d48a80d3228d84410cc9c28d1a3e2d902b66c624262
     home: https://phasetwo.io/helm-charts/charts/postgresql
     icon: https://bitnami.com/assets/stacks/postgresql/img/postgresql-stack-220x234.png
     keywords:
@@ -70,4 +138,4 @@ entries:
     urls:
     - https://p2-inc.github.io/helm-charts/postgresql-12.1.3.tgz
     version: 12.1.3
-generated: "2023-01-01T15:36:42.150416842-08:00"
+generated: "2023-01-19T15:55:34.649879388-08:00"

@@ -17,7 +17,7 @@ data:
   KC_PROXY: {{ .Values.proxy | quote }}
   KC_METRICS_ENABLED: {{ ternary "true" "false" .Values.metrics.enabled | quote }}
   KC_DB: {{ include "keycloak.databaseVendor" . | quote }}
-  KC_DB_URL_HOST: {{ include "keycloak.databaseHost" . | quote }}
+  KC_DB_URL_HOST: {{ include "common.names.dependency.fullname" (dict "chartName" "postgresql" "chartValues" .Values.postgresql "context" $) }}.{{ include "common.names.namespace" . }}.svc.{{ .Values.clusterDomain }}
   KC_DB_URL_PORT: {{ include "keycloak.databasePort" . }}
   KC_DB_URL_DATABASE: {{ include "keycloak.databaseName" . | quote }}
   KC_DB_USERNAME: {{ include "keycloak.databaseUser" . | quote }}
