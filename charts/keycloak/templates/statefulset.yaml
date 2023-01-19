@@ -112,20 +112,20 @@ spec:
                 secretKeyRef:
                   name: {{ include "keycloak.secretName" . }}
                   key: {{ include "keycloak.secretKey" . }}
-            - name: KEYCLOAK_DATABASE_PASSWORD
+            - name: KC_DB_PASSWORD
               valueFrom:
                 secretKeyRef:
                   name: {{ include "keycloak.databaseSecretName" . }}
                   key: {{ include "keycloak.databaseSecretKey" . }}
             {{- if and .Values.tls.enabled (or .Values.tls.keystorePassword .Values.tls.passwordsSecret) }}
-            - name: KEYCLOAK_HTTPS_KEY_STORE_PASSWORD
+            - name: KC_HTTPS_KEY_STORE_PASSWORD
               valueFrom:
                 secretKeyRef:
                   name: {{ include "keycloak.tlsPasswordsSecretName" . }}
                   key: "tls-keystore-password"
             {{- end }}
             {{- if and .Values.tls.enabled (or .Values.tls.truststorePassword .Values.tls.passwordsSecret) }}
-            - name: KEYCLOAK_HTTPS_TRUST_STORE_PASSWORD
+            - name: KC_HTTPS_TRUST_STORE_PASSWORD
               valueFrom:
                 secretKeyRef:
                   name: {{ include "keycloak.tlsPasswordsSecretName" . }}
@@ -138,7 +138,7 @@ spec:
                   name: {{ include "keycloak.spiPasswordsSecretName" . }}
                   key: "spi-truststore-password"
             {{- end }}
-            - name: KEYCLOAK_HTTP_RELATIVE_PATH
+            - name: KC_HTTP_RELATIVE_PATH
               value: {{ .Values.httpRelativePath | quote }}
             {{- if .Values.extraStartupArgs }}
             - name: KEYCLOAK_EXTRA_ARGS

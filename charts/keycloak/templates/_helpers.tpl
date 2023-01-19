@@ -79,6 +79,13 @@ Return true if a configmap object should be created
 {{- end -}}
 
 {{/*
+Return the Database vendor
+*/}}
+{{- define "keycloak.databaseVendor" -}}
+{{- ternary "postgres" .Values.externalDatabase.vendor .Values.postgresql.enabled -}}
+{{- end -}}
+
+{{/*
 Return the Database hostname
 */}}
 {{- define "keycloak.databaseHost" -}}

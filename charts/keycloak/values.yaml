@@ -74,7 +74,7 @@ diagnosticMode:
 image:
   registry: quay.io
   repository: phasetwo/phasetwo-keycloak
-  tag: 20.0.2.1671556844
+  tag: 20.0.3.1674047714
   digest: ""
   ## Specify a imagePullPolicy
   ## Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
@@ -220,10 +220,11 @@ initdbScripts: {}
 initdbScriptsConfigMap: ""
 ## @param command Override default container command (useful when using custom images)
 ##
-command: []
+command: [ ]
 ## @param args Override default container args (useful when using custom images)
 ##
-args: [ "start-dev" ]
+#args: [ "start" ]
+args: [ "start"  ]
 ## @param extraEnvVars Extra environment variables to be set on Keycloak container
 ## Example:
 ## extraEnvVars:
@@ -988,6 +989,7 @@ postgresql:
 ## @param externalDatabase.existingSecretPasswordKey Name of an existing secret key containing the database credentials
 ##
 externalDatabase:
+  vendor: ""
   host: ""
   port: 5432
   user: bn_keycloak
