@@ -223,8 +223,8 @@ initdbScriptsConfigMap: ""
 command: [ ]
 ## @param args Override default container args (useful when using custom images)
 ##
-#args: [ "start" ]
-args: [ "start"  ]
+args: [ "start-dev" ]
+#args: [ "start"  ]
 ## @param extraEnvVars Extra environment variables to be set on Keycloak container
 ## Example:
 ## extraEnvVars:
