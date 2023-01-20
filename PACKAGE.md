@@ -34,5 +34,5 @@ helm install keycloak --namespace keycloak --create-namespace .
 
 
 
-helm upgrade keycloak --namespace keycloak .
+helm upgrade -i keycloak --namespace keycloak .
 ```
