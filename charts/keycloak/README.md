@@ -48,7 +48,7 @@ These commands deploy a Keycloak application on the Kubernetes cluster in the de
 
 To install Keycloak Metrics Exporter, Prometheus, Grafana, and Loki using Helm charts, you can use the following commands:
 
-1. Update your value.yaml file to enable `metrics > enabled: true`
+1. Update your values.yaml file to enable `metrics > enabled: true`
 
 2. Upgrade your existing helm release:
 

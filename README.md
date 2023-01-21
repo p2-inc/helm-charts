@@ -22,6 +22,40 @@ $ helm upgrade keycloak --namespace keycloak phasetwo/keycloak
 $ kubectl get all,ing -n keycloak
 ```
 
+## Enabling Metrics and Installing Prometheus and Grafana
+
+To install Keycloak Metrics Exporter, Prometheus, Grafana, and Loki using Helm charts, you can use the following commands:
+
+1. Update your values.yaml file to enable `metrics > enabled: true`
+
+2. Upgrade your existing helm release:
+
+```
+helm upgrade -i keycloak --namespace keycloak phasetwo/keycloak
+```
+
+3. Add the Helm chart repository for Prometheus, Grafana, and Loki:
+
+```
+helm repo add grafana https://grafana.github.io/helm-charts
+helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+helm search repo grafana
+helm search repo prometheus-community
+```
+
+4. Use Helm to install the Prometheus, Grafana, and Loki charts:
+
+```
+helm install prometheus --namespace grafana --create-namespace prometheus-community/prometheus
+helm install grafana --namespace grafana --create-namespace grafana/grafana --set persistence.enabled=true
+helm install loki --namespace grafana --create-namespace grafana/loki
+```
+
+Please note that the above commands are just examples and you may want to customize the installation by passing in different values for the different chart options available.
+
+You can also use the command `helm list` to check the status of the installed charts, and `helm delete my-release` to delete the specific installation.
+
+
 ## Gotchas
 
  * If you're running Kubernetes locally (eg. microk8s/minikube) and postgres is not starting, you may need to [disable huge pages](https://github.com/kubernetes/kubernetes/issues/71233#issuecomment-447472125). 
