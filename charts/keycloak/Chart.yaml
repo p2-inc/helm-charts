@@ -5,7 +5,7 @@ appVersion: 20.0.3.1674047714
 dependencies:
   - condition: postgresql.enabled
     name: postgresql
-    repository: https://p2-inc.github.io/helm-charts
+    repository: oci://registry-1.docker.io/bitnamicharts/postgresql
     version: 12.x.x
   - name: common
     repository: https://charts.bitnami.com/bitnami
