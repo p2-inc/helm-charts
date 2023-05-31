@@ -9,7 +9,6 @@ Popular applications, provided by [Phase Two](https://phasetwo.io), ready to lau
 
 ```bash
 $ helm repo add phasetwo https://p2-inc.github.io/helm-charts
-$ helm search repo phasetwo
 $ helm install keycloak --namespace keycloak --create-namespace phasetwo/keycloak
 $ kubectl get all,ing -n keycloak
 ```

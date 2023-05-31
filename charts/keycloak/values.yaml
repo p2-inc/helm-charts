@@ -62,7 +62,7 @@ diagnosticMode:
 ## @section Keycloak parameters
 
 ## PhaseTwo Keycloak image version
-## ref: https://hub.docker.com/r/phasetwo/keycloak/tags/
+## ref: https://quay.io/repository/phasetwo/phasetwo-keycloak?tab=tags
 ## @param image.registry Keycloak image registry
 ## @param image.repository Keycloak image repository
 ## @param image.tag Keycloak image tag (immutable tags are recommended)

@@ -1,0 +1,16 @@
+## This configuration disables local installation of the postgres database.
+## Setting postgresql.enabled to false will cause KeyCloak to look for credentials in the
+## parameters specified below or in an existing secret if externalDatabase.existingSecret is specified.
+##
+
+postgresql:
+  enabled: false
+externalDatabase:
+  vendor: "postgres"
+  host: "https://mydb.host"
+  port: 5432
+  user: keycloak
+  database: keycloak
+  password: "Ch@ngeM3#!"
+  existingSecret: ""
+  existingSecretPasswordKey: ""
