@@ -2,7 +2,7 @@
 
 # The Phase Two Library for Kubernetes
 
-[Phase Two](https://phasetwo.io) enhance [Keycloak](https://keycloak.org), ready to launch on Kubernetes using [Kubernetes Helm](https://github.com/helm/helm). This chart library was initially forked from [Bitnami](https://bitnami.com) and modified to deliver custom Phase Two enhanced Keycloak images.
+[Phase Two](https://phasetwo.io) enhanced [Keycloak](https://keycloak.org), ready to launch on Kubernetes using [Kubernetes Helm](https://github.com/helm/helm). This chart library was initially forked from [Bitnami](https://bitnami.com) and modified to deliver custom Phase Two enhanced Keycloak images.
 
 ## TL;DR (new helm repo)
 
