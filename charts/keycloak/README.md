@@ -10,18 +10,15 @@ Keycloak is a high performance Java-based identity and access management solutio
 
 ```console
   helm repo add phasetwo https://p2-inc.github.io/helm-charts
-  helm search repo phasetwo
   helm install keycloak --namespace keycloak --create-namespace phasetwo/keycloak
   kubectl get all,ing -n keycloak  
 ```
 
 ## Introduction
 
-Bitnami charts for Helm are carefully engineered, actively maintained and are the quickest and easiest way to deploy containers on a Kubernetes cluster that are ready to handle production workloads.
+The PhaseTwo Helm chart is carefully engineered, actively maintained and is the quickest and easiest way to deploy containers on a Kubernetes cluster that are ready to handle production workloads.
 
 This chart bootstraps a [Keycloak](https://github.com/bitnami/containers/tree/main/bitnami/keycloak) deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
-
-Bitnami charts can be used with [Kubeapps](https://kubeapps.dev/) for deployment and management of Helm Charts in clusters.
 
 ## Prerequisites
 
@@ -34,7 +31,6 @@ To install the chart with the release name `keycloak`:
 
 ```bash
   helm repo add phasetwo https://p2-inc.github.io/helm-charts
-  helm search repo phasetwo
   helm install keycloak --namespace keycloak --create-namespace phasetwo/keycloak
   kubectl get all,ing -n keycloak
 ```
@@ -416,7 +412,11 @@ Bitnami will release a new chart updating its containers if a new version of the
 
 Sometimes, you may want to have Keycloak connect to an external PostgreSQL database rather than a database within your cluster - for example, when using a managed database service, or when running a single database server for all your applications. To do this, set the `postgresql.enabled` parameter to `false` and specify the credentials for the external database using the `externalDatabase.*` parameters.
 
-Refer to the [chart documentation on using an external database](https://docs.bitnami.com/kubernetes/apps/keycloak/configuration/use-external-database) for more details and an example.
+See the `charts/examples/production/values.yaml` for an example of the configuration parameters that you will need to set. You can specify your custom `values.yaml` file with the following command.
+
+```bash
+$ helm install my-release -f path/to/my/values.yaml my-repo/keycloak
+```
 
 > NOTE: Only PostgreSQL database server is supported as external database
 

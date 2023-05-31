@@ -61,8 +61,8 @@ diagnosticMode:
 
 ## @section Keycloak parameters
 
-## Bitnami Keycloak image version
-## ref: https://hub.docker.com/r/bitnami/keycloak/tags/
+## PhaseTwo Keycloak image version
+## ref: https://quay.io/repository/phasetwo/phasetwo-keycloak?tab=tags
 ## @param image.registry Keycloak image registry
 ## @param image.repository Keycloak image repository
 ## @param image.tag Keycloak image tag (immutable tags are recommended)
@@ -973,9 +973,9 @@ postgresql:
   enabled: true
   auth:
     postgresPassword: ""  
-    username: bn_keycloak
+    username: keycloak
     password: ""
-    database: bitnami_keycloak
+    database: keycloak
     existingSecret: ""
   architecture: standalone
 ## External PostgreSQL configuration
@@ -992,8 +992,8 @@ externalDatabase:
   vendor: ""
   host: ""
   port: 5432
-  user: bn_keycloak
-  database: bitnami_keycloak
+  user: keycloak
+  database: keycloak
   password: ""
   existingSecret: ""
   existingSecretPasswordKey: ""
