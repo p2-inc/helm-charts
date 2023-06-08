@@ -1,5 +1,7 @@
 > :rocket: **Try it for free** in the new Phase Two [keycloak managed service](https://phasetwo.io/dashboard/?utm_source=github&utm_medium=readme&utm_campaign=helm-charts).
 
+> :bug: **This chart is not production-ready** We are currently evaluating dropping this repo and recommending the use of the [Codecentric keycloakx chart](https://github.com/codecentric/helm-charts/tree/master/charts/keycloakx) with the `image.repository` var set to `quay.io/phasetwo/phasetwo-keycloak` and the `args` var set to `--spi-email-template-provider=freemarker-plus-mustache --spi-email-template-freemarker-plus-mustache-enabled=true --spi-theme-cache-themes=false`. We encourage you to use their chart, and report any problems here when using our Docker images in conjunction with it. Please do not use our chart until further notice.
+
 # The Phase Two Library for Kubernetes
 
 [Phase Two](https://phasetwo.io) enhanced [Keycloak](https://keycloak.org), ready to launch on Kubernetes using [Kubernetes Helm](https://github.com/helm/helm). This chart library was initially forked from [Bitnami](https://bitnami.com) and modified to deliver custom Phase Two enhanced Keycloak images.
